@@ -1,0 +1,15 @@
+## Integrantes
+- Matheus Sabino da Silva Guedes — RM 572907
+- Lucas Bellezzo Figueiredo - RM : 569734
+- Maria Luiza Vieira de Freitas - RM : 571535
+- Matheus Arruda Camara Soares - RM : 571594
+- Giovanna Ferreira - RM : 571822
+
+Link do repositório GitHub:
+https://github.com/TETEUSA007/goodwe-chargeops-assistant.git
+
+O repositório contém:
+- README completo do projeto
+- Fluxograma de funcionamento do chatbot
+- Modelo de teste com perguntas e respostas esperadas
+- System prompt base do chatbot

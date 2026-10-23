@@ -1,0 +1,34 @@
+EV CHALLENGE 2026 - FIAP x GoodWe
+Sprint 03 - Agentes de IA e Evolucao Conversacional
+Disciplina: Prompt and Artificial Intelligence
+Curso: Ciencia da Computacao - 1o ano
+Turma: CCPQ
+
+Projeto: GoodWe ChargeOps Agent
+
+INTEGRANTES
+------------------------------------------------------------
+Nome: Giovanna Ferreira Almeida
+RM:   571822
+Turma: CCPQ
+Responsabilidade: casos de teste de seguranca e analise dos resultados
+
+Nome: Lucas Bellezzo Figueiredo
+RM:   569734
+Turma: CCPQ
+Responsabilidade: guardrails de entrada e saida
+
+Nome: Maria Luiza Vieira de Freitas
+RM:   571535
+Turma: CCPQ
+Responsabilidade: comparacao entre modelos e relatorio_modelos.md
+
+Nome: Matheus Arruda Camara Soares
+RM:   571594
+Turma: CCPQ
+Responsabilidade: ferramentas do agente e interface Streamlit
+
+Nome: Matheus Sabino da Silva Guedes
+RM:   572907
+Turma: CCPQ
+Responsabilidade: arquitetura do grafo LangGraph e harness de avaliacao

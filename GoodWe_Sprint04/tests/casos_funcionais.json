@@ -1,0 +1,35 @@
+{
+  "descricao": "Os 6 casos definidos na Sprint 1 e usados na Sprint 2, mantidos sem qualquer alteração para que o comparativo antes x depois seja feito sobre a mesma régua.",
+  "casos": [
+    {
+      "id": "F1",
+      "pergunta": "Como posso organizar o uso do carregador entre os moradores?",
+      "resposta_esperada": "Você pode organizar o uso por meio de agendamento de horários, limite de tempo por morador e registro de cada ciclo de recarga. O ideal é definir regras claras no condomínio, como tempo máximo de uso, prioridade por ordem de reserva e orientação para liberar a vaga após o carregamento."
+    },
+    {
+      "id": "F2",
+      "pergunta": "Um morador deixou o carro carregando depois que a bateria completou. O que devo fazer?",
+      "resposta_esperada": "Oriente o morador a retirar o veículo assim que a recarga for concluída. Para evitar esse problema, o condomínio pode criar uma regra de permanência máxima após o término da carga e enviar avisos aos moradores sobre o uso consciente da vaga."
+    },
+    {
+      "id": "F3",
+      "pergunta": "Como posso cobrar cada morador pelo uso do carregador?",
+      "resposta_esperada": "A cobrança pode ser feita com base no consumo registrado em cada ciclo de recarga. O ideal é manter um controle com data, horário, morador, tempo de uso e energia consumida. Com esses dados, a administração pode calcular o valor proporcional de cada usuário."
+    },
+    {
+      "id": "F4",
+      "pergunta": "O carregador não está funcionando. O que devo verificar primeiro?",
+      "resposta_esperada": "Verifique se há energia no ponto de instalação, se o carregador está ligado, se existe alguma mensagem de erro e se o veículo está corretamente conectado. Caso o problema continue, o ideal é acionar o suporte técnico responsável ou a equipe de manutenção autorizada."
+    },
+    {
+      "id": "F5",
+      "pergunta": "O chatbot pode liberar o carregador automaticamente para um morador?",
+      "resposta_esperada": "Nesta versão, o chatbot apenas orienta o síndico ou administrador. A liberação automática dependeria de integração futura com o sistema de controle do carregador, autenticação de usuários e registro dos ciclos de recarga."
+    },
+    {
+      "id": "F6",
+      "pergunta": "Posso permitir que qualquer visitante use o carregador?",
+      "resposta_esperada": "A decisão depende das regras do condomínio. O recomendado é que visitantes só utilizem o carregador mediante autorização do síndico ou administrador, com registro do responsável, horário de uso e forma de cobrança."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+============================================================
+EV CHALLENGE 2026 - FIAP x GoodWe
+ENTREGA - SPRINT 2
+Projeto: GoodWe ChargeOps Assistant (EV ChargeOps)
+============================================================
+
+INTEGRANTES
+------------------------------------------------------------
+- Matheus Sabino da Silva Guedes - RM 572907
+- Lucas Bellezzo Figueiredo      - RM 569734
+- Maria Luiza Vieira de Freitas  - RM 571535
+- Matheus Arruda Camara Soares   - RM 571594
+- Giovanna Ferreira              - RM 571822
+
+REPOSITORIO GITHUB (com codigo atualizado e README)
+------------------------------------------------------------
+https://github.com/TETEUSA007/sprint-2-IA---GoodWe-ChargeOps-Assistant-EV-ChargeOps-.git
+
+VIDEO DE DEMONSTRACAO (YouTube - nao listado)
+------------------------------------------------------------
+https://youtu.be/Q0VriHvN3qk
+
+RESUMO DO QUE FOI ENTREGUE NA SPRINT 2
+------------------------------------------------------------
+- Chatbot em Python usando a API GRATUITA do Groq (modelo Llama 3.3).
+- Injecao de contexto via system prompt (Sprint 1).
+- Gerenciamento de historico de mensagens (memoria de contexto).
+- Few-shot prompting (diferencial).
+- Function calling: ferramenta registrar_ciclo_recarga (diferencial).
+- Interfaces CLI (terminal) e Streamlit (web).
+- Execucao dos 6 casos de teste com resultados documentados
+  em docs/RESULTADOS_TESTES.md.
+- GROQ_API_KEY utilizada via variavel de ambiente (.env / Colab Secrets),
+  sem exposicao de chave no codigo ou no repositorio.
+
+============================================================

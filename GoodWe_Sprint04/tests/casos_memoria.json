@@ -1,0 +1,39 @@
+{
+  "descricao": "Cenários multi-turno que verificam se o agente recupera informações ditas em mensagens anteriores da MESMA sessão. Cada cenário roda em um thread_id próprio; a avaliação ocorre apenas no último turno.",
+  "cenarios": [
+    {
+      "id": "M1",
+      "nome": "Recuperação de dois fatos informados em turnos separados",
+      "descricao": "Cenário exigido no enunciado da Sprint 3. O usuário informa o condomínio no turno 1 e a quantidade de vagas no turno 2. No turno 3 pergunta usando uma referência indireta ('o condomínio que mencionei'), sem repetir nenhum dos dois dados.",
+      "turnos": [
+        "Estou utilizando um carregador no condomínio Solar Park.",
+        "Existem 12 vagas de carregamento.",
+        "Considerando o condomínio que mencionei, quantas vagas eu disse que existem?"
+      ],
+      "padroes_esperados": ["\\b12\\b", "solar\\s*park"],
+      "padroes_proibidos": ["voc[eê]\\s+n[aã]o\\s+(me\\s+)?(informou|disse|mencionou)", "poderia\\s+repetir", "n[aã]o\\s+tenho\\s+(essa\\s+)?informa[cç][aã]o"]
+    },
+    {
+      "id": "M2",
+      "nome": "Memória combinada com uso de ferramenta",
+      "descricao": "O usuário informa os dados de uma recarga, pede o registro (que dispara a ferramenta) e depois pergunta sobre o valor informado no primeiro turno. Testa se a memória sobrevive a um desvio pelo nó de ferramentas.",
+      "turnos": [
+        "O morador Carlos Andrade recarregou o carro hoje, dia 2026-09-10, e consumiu 18.4 kWh.",
+        "Registre esse ciclo no controle do condomínio, por favor.",
+        "Qual foi o valor de energia que eu informei para o Carlos mesmo?"
+      ],
+      "padroes_esperados": ["18[.,]4"],
+      "padroes_proibidos": ["voc[eê]\\s+n[aã]o\\s+(me\\s+)?(informou|disse)", "poderia\\s+(me\\s+)?(repetir|informar\\s+novamente)"]
+    },
+    {
+      "id": "M3",
+      "nome": "Isolamento entre sessões",
+      "descricao": "Executado em um thread_id diferente do cenário M1. O agente NÃO deve conhecer o condomínio Solar Park nem as 12 vagas, provando que a memória é por sessão e não global.",
+      "turnos": [
+        "Quantas vagas de carregamento existem no meu condomínio?"
+      ],
+      "padroes_esperados": ["n[aã]o\\s+(tenho|disponho|possuo)|n[aã]o\\s+foi\\s+informad|voc[eê]\\s+(ainda\\s+)?n[aã]o\\s+(me\\s+)?(informou|disse|mencionou)|pode\\s+(me\\s+)?informar|qual(is)?\\s+"],
+      "padroes_proibidos": ["solar\\s*park", "\\b12\\s+vagas"]
+    }
+  ]
+}
